@@ -1,0 +1,71 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: space-around;
+    height: 600px;
+
+   /*align-content: start;*/
+    background-color: dodgerblue;
+   padding: 10px;
+   /* place-content:center center;*/
+}
+.container div {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+/*(The rows and columns of a grid is defined with the grid-template-rows and the grid-template-columns 
+properties (or the shorthand grid or grid-template properties).
+
+These define the grid tracks. A grid track is the space between two adjacent grid lines.
+
+The grid-template-columns Property
+The grid-template-columns property defines the number of columns in your grid layout, and it can define the width of each column.
+
+The value is a space-separated-list, where each value defines the width of the respective column.
+
+If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all columns should have the
+ same thwid.
+ grid-template-column : quy định các chiều dài của các column 
+ this is as same as concept of grid-template-row
+
+ just-content dc sử dụng để quy định các cột sẽ được biểu diễn theo ... ko cần quy định theo columns
+ align-content : dc su dung de can chinh cho  nội duing ở đầu hay cuoisop lưới ::có start và end
+ place-content : quy định vị trí của nội dung
+grid-row: bạn có thể tham khảo các số dòng hoặc sử dụng từ khóa "Span" để xác định số lượng mục sẽ kéo dài.
+nos   chỉ sử dụng  cho các phẩn tử con
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+
+
+flex:: là việc biến 1 tag thành container và các  item trong nó
+sẽ trở thhanfh các item:::
+- flex-container , flex-items
+*/
+.flex-container{
+    display: flex;/* 2 dang laf flex vaf inline-flex:*/
+    /*to represent direction of elements :: using flex-direction*/
+    flex-direction: column;
+    /* there are four dirct repectively : row: row-reverse: on the right: of screen 
+    column ; column-reverse*/
+    flex-wrap:wrap-reverse;
+    /*wrap element which is used to regulate : inline or ...xun donmg
+*/
+   background-color:antiquewhite;
+}
+.flex-container div {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    /*to divide equaly space*/
+ 
+}

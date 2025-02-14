@@ -1,0 +1,66 @@
+/*
+Write CSS rules for styling body, header, nav, main, footer, li, h1, and p elements.
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+nav {
+    background-color: aliceblue;
+}
+
+main {
+    background-color: cadetblue;
+    font-size: 20px;
+}
+
+footer {
+    background-color: burlywood;
+}
+
+li::before {
+   
+    color:blueviolet;
+    display: block;
+    width: 40%;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: left;
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    color: darkgreen;
+}
+
+p {
+    line-height: 1.8;
+}
+.list_link_container{
+    list-style-type: upper-roman;
+    margin-left: 10px;
+    padding-left: 15px;
+    text-align: left;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    height:400px;
+   
+    justify-items: left;
+    padding: 15px;
+    justify-content: space-around;
+}
+.flex_container{
+    display: flex;
+    flex-direction: row-reverse;
+    
+    padding: 10px;
+    margin-left: 10px;
+    justify-content: space-around;
+}
